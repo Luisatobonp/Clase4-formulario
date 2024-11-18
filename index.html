@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!--Framework de Bootstrap-->
+    
+</head>
+<body>
+<div class="container">
+    <form action="RecibirForm.html" method="post"> 
+        <fieldset>
+        <label for="">Tipo de Documento</label>
+            <input type="text" id="tDoc" name="tDoc"><br>
+        <label for="nDoc">* Nro. Documento</label>
+            <input type="text" id="nDoc" name="nDoc"><br>
+        <label for="email">Correo</label> 
+            <input type="email" id="email"> <br>
+        <label for="clave">Password</label>
+            <input type="password" id="clave"><br>
+        <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres"><br>
+        <label for="pApellido">1er Apellido</label>
+            <input type="text" id="pApellido" name="pApellido"><br>
+        <label for="sApellido">2do Apellido</label>
+            <input type="text" id="sApellido" name="sApellido"><br><br>
+            <label for="genero">Genero</label> <br>
+                <input type="radio" name="genero" value="F">Femenino
+                <input type="radio" name="genero" value="M">Masculino <br><br>
+                <label for="">Nacionalidad</label>
+            <select name="nac" id="nac" multiple size="2"> 
+                <option value="">Seleccione</option>
+                <option value="Col">Colombiana</option>
+                <option value="Ven">Venezolana</option>
+                <option value="Mus">Musulman</option>
+                <option value="Jud" selected>Judio</option>
+                <option value="Chi">Chileno</option>
+
+        </fieldset>
+        </select>
+        <br><br>
+        <label for="ciu">Ciudad</label> 
+            <input list="ciu">
+            <datalist id="ciu">
+            <option value="">Seleccione</option>
+                <option value="Med">Medellin</option>
+                <option value="Bog">Bogota</option>
+                <option value="Bar">Barranquilla</option>
+                <option value="Bab">Barrancabermeja</option>
+                <option value="Cal">Cali</option>
+                <option value="Sin">Sincelejo</option>
+                <option value="Bel">Bello</option> 
+                
+            </datalist>
+        <label for="file">Suba Hoja de Vida</label>
+            <input type="file"><br>
+        <label for="mes">tipos de fecha</label>
+            <input type="month">
+            <input type="date">
+            <input type="week">
+            <input type="datetime-local">
+        <fieldset>
+            
+        <legend>Gustos</legend>
+        <label for="">hobbies</label> <br>
+            <input type="checkbox" name="hobby1">Musica 
+            <input type="checkbox" name="hobby2">Pintar
+            <input type="checkbox" name="hobby3">Deporte
+            <input type="checkbox" name="hobby4">Leer
+            <input type="checkbox" name="hobby5">Bailar <br><br>
+        <label for="pasion">Qué le apasiona</label> <br>
+            <textarea col="30" rows="5" name="pasion" id="pasion">Describa de su hobby ¿que le apasiona?</textarea> <br>
+        
+        </select>
+        </fieldset>
+
+
+
+        <button type="button" onclick="alert('Holiii')">Saludar</button>
+        <input type="img" src="">
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#75FB4C"><path d="m424-312 282-282-56-56-226 226-114-114-56 56 170 170ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+    </button>
+
+
+        <input type="submit" value="Guardar">
+
+    </form>
+
+</div>
+
+    <!--Framework de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></script>
+    
+</body>
+</html>
